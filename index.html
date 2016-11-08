@@ -310,19 +310,10 @@
     function initial(){
         var btn=$("#buttons .btn");
         var media=$("#media");
-        var pause_on=$("#pause_on");
+
         var bar_parent=$("#bar_parent");
         var tops=$("#tops");
-        var poster_on=$("#poster_on");
-        /*************播放事件**********************/
-        //播放按钮绑定暂停播放事件
-        btn.bind("click",btn_click);
-        //整个播放器绑定暂停播放事件
-        media.bind("click",btn_click);
-        //大暂停按钮绑定暂停播放事件
-        pause_on.bind("click",btn_click);
-        //播放完图片绑定播放事件
-        poster_on.bind("click",btn_click);
+
 
 
 
@@ -658,7 +649,30 @@
         }
     })();
     window.addEventListener("load",initial,false);
-    $("video").get(0).addEventListener("canplaythrough",allTime,false);
+    $("video").get(0).addEventListener("canplaythrough",function () {
+        allTime();
+        var btn=$("#buttons .btn");
+        var media=$("#media");
+        var pause_on=$("#pause_on");
+        var bar_parent=$("#bar_parent");
+        var tops=$("#tops");
+        var poster_on=$("#poster_on");
+        /*************播放事件**********************/
+        //播放按钮绑定暂停播放事件
+        btn.bind("click",btn_click);
+        //整个播放器绑定暂停播放事件
+        media.bind("click",btn_click);
+        //大暂停按钮绑定暂停播放事件
+        pause_on.bind("click",btn_click);
+        //播放完图片绑定播放事件
+        poster_on.bind("click",btn_click);
+
+    },false);
+    window.addEventListener("waiting",function () {
+        while(true){
+            console.log(1);
+        }
+    },false);
 
 </script>
 <script src="js/main.js"></script>
