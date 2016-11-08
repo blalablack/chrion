@@ -516,8 +516,8 @@
         }
     }
 
-
     /**************播放按钮**************/
+    var shijian_time=true;
     function btn_click(){
         var control=$("#control");
         var media=$("#media").get(0);
@@ -541,25 +541,30 @@
             pause_on.css("display","none");
             poster_on.css("display","none");
             //一动control就回来
-            $(media).bind("mousemove",function () {
-                now_TIME=0;
-                if(control.css("display")=="none"){
-                    control.css({"display":"block"});
-                    control.stop(true);
-                    control.animate({"opacity":1},10);
-                }
-            });
-            control.bind("mousemove",function () {
-                now_TIME=0;
-                if($(this).css("display")=="none"){
-                    $(this).css({"display":"block"});
-                    $(this).stop(true);
-                    $(this).animate({"opacity":1},10);
-                }
+            //绑定一个计时器多次会加速，shijian_time用来控制
+            if(shijian_time){
+                console.log(shijian_time);
+                $(media).bind("mousemove",function () {
+                    now_TIME=0;
+                    if(control.css("display")=="none"){
+                        control.css({"display":"block"});
+                        control.stop(true);
+                        control.animate({"opacity":1},10);
+                    }
+                });
+                control.bind("mousemove",function () {
+                    now_TIME=0;
+                    if($(this).css("display")=="none"){
+                        $(this).css({"display":"block"});
+                        $(this).stop(true);
+                        $(this).animate({"opacity":1},10);
+                    }
 
-            });
-            //视频播放就开始计时
-            setInterval(shijian,1000);
+                });
+                //视频播放就开始计时
+                setInterval(shijian,1000);
+                shijian_time=false;
+            }
             control.css({"display":"block"});
             control.animate({"opacity":1},200);
             pause_on.css({"display":"none"});
