@@ -93,8 +93,7 @@
             margin-top:8px;
             width:100%;
             height:2px;
-            background:#eee;
-            position: relative;
+            background:#aaa;
         }
         #bar_parent{
             float:left;
@@ -111,15 +110,6 @@
             width:0;
             height:100%;
             background-color: #0087c3;
-            position: absolute;
-            z-index:10;
-        }
-        #bar_parent .buffer{
-            width:10%;
-            height:100%;
-            background-color: #aaa;
-            position: absolute;
-
         }
         #time_all{
             float:left;
@@ -251,7 +241,6 @@
                         </div>
                         <div id="bar_parent">
                             <div class="bar">
-                                <div class="buffer"></div>
                                 <div class="progress"></div>
                             </div>
                         </div>
@@ -514,7 +503,6 @@
         var media=$("#media").get(0);
         var btn=$("#buttons .btn");
         var pause_on=$("#pause_on");
-        var poster_on=$("#poster_on");
         if(!media.ended&&!media.paused){
             media.pause();
             pause_on.css({"display":"block"});
@@ -530,7 +518,6 @@
         }else{
             media.play();
             pause_on.css("display","none");
-            poster_on.css("display","none");
             //一动control就回来
             $(media).bind("mousemove",function () {
                 now_TIME=0;
@@ -621,12 +608,9 @@
         function time(){
             var media=$("#media").get(0);
             var progress=$("#bar_parent .progress");
-            var buffer=$("#bar_parent .buffer");
-            var buffer_width=media.buffered.end(0)/media.duration*100+"%";
-            //缓存长度
-            buffer.css("width",buffer_width);
-            var progress_width=media.currentTime/media.duration*100+"%";
-            progress.css("width",progress_width);
+            console.log(media.buffered.end(0));
+            var size=media.currentTime/media.duration*100+"%";
+            progress.css("width",size);
             var currentTime=parseInt(media.currentTime);
             var shi=Math.floor(currentTime/60);
             var miao=currentTime%60;
