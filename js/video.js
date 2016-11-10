@@ -1,5 +1,6 @@
 
 function initial(){
+    allTime();
     var bar_parent=$("#bar_parent");
     var tops=$("#tops");
     /*************播放事件**********************/
@@ -344,7 +345,6 @@ var aa=(function current_time(){
         p:stop
     }
 })();
-window.addEventListener("load",initial,false);
 //视频准备好以后才绑定开始事件
-$("video").get(0).addEventListener("canplaythrough",allTime,false);
+$("video").get(0).addEventListener("canplaythrough",initial,false);
 
