@@ -141,6 +141,7 @@ function volume_click(){
         voice_progress.css({"width":"0%"});
         $("#voice .cicle").css("left","0%");
         $(this).unbind("mouseenter mouseleave");
+        var media=$("#media");
         media.get(0).volume=0;
     });
 }
