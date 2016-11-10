@@ -137,7 +137,7 @@ function volume_click(){
     });
     volume_class.click(function () {
         $(this).css({"backgroundPosition":"-103px 0"});
-        var voice_progress=volume_class.children(".voice_progress");
+        var voice_progress=$(".voice_progress");
         voice_progress.css({"width":"0%"});
         $("#voice .cicle").css("left","0%");
         $(this).unbind("mouseenter mouseleave");
