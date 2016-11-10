@@ -114,7 +114,7 @@
             position: absolute;
             z-index:10;
         }
-        #bar_parent .butter{
+        #bar_parent .buffer{
             width:10%;
             height:100%;
             background-color: #aaa;
@@ -543,7 +543,6 @@
             //一动control就回来
             //绑定一个计时器多次会加速，shijian_time用来控制
             if(shijian_time){
-                console.log(shijian_time);
                 $(media).bind("mousemove",function () {
                     now_TIME=0;
                     if(control.css("display")=="none"){
@@ -637,8 +636,10 @@
             var progress=$("#bar_parent .progress");
             var buffer=$("#bar_parent .buffer");
             console.log(media.buffered.end(0));
-            var size=media.currentTime/media.duration*100+"%";
-            progress.css("width",size);
+            var width_progress=media.currentTime/media.duration*100+"%";
+            progress.css("width",width_progress);
+            var width_buffer=media.buffered.end(0)/media.duration*100+"%";
+            buffer.css("width",width_buffer);
             var currentTime=parseInt(media.currentTime);
             var shi=Math.floor(currentTime/60);
             var miao=currentTime%60;
