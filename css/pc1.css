@@ -1,5 +1,5 @@
 .kuang{
-    width:1180px;
+    width:930px;
 }
 .header{
     float: left;
@@ -53,7 +53,11 @@
 .content{
     width:80%;
 }
+.content_header h1{
+    border-bottom:1px solid #777;
+    padding-bottom:10px;
 
+}
 .content_content .content_img img{
     max-width: 100%;
 
@@ -61,7 +65,7 @@
 .xiangxi{
     color:#777;
 }
- .content_img{
+.content_img{
     width:60%;
 }
 .content_img1{
@@ -74,49 +78,35 @@
     border-left:1px solid #aaa;
     padding-left:20px;
 }
-/**************************/
-/******************/
-#content .no{
+/*******************/
+
+#content .center span{
     display: none;
 }
-#content .center .center2{
-    width:60%;
-    float:right;
+#content .center{
+    margin-bottom:0;
 }
-#content .center span{
-    position: absolute;
-    bottom:10px;
-    letter-spacing: 0;
-    font-size: 12px;
+#content .content_bottom .content_bottom_first{
+    margin-top:0;
 }
 #content .content_bottom div{
-    width:40%;
-    float:left;
-    padding-right:30px;
-    box-sizing: border-box;
-}
-#content .content_bottom>p{
-    float:right;
-    width:60%;
-    font-weight:400;
-    margin-top:0;
-    margin-bottom:35px;
-}
-#content .content_bottom p strong{
-    font-size: 15px;
-    margin-right:5px;
-    font-weight:600;
-
+    margin-top:40px;
 }
 #content .content_bottom div p{
-    margin-top:2px;
-    margin-bottom:3px;
+    border: 1px solid #E5E5E5;
+    border-top:transparent;
+    box-shadow: 3px 3px 6px #F0F0F0;
+    padding-bottom: 5px;
+    margin-top:0;
+    padding-top:3px;
+    padding-left:5px;
 }
-/*************************/
+/**************************/
 .aside{
+    display: none;
     position: absolute;
-    width:140px;
-    margin-top:670px;
+    width:124px;
+    margin-top:568px;
 
 }
 .aside p{
@@ -134,11 +124,11 @@
 }
 .aside a{
     display: block;
-    width:136px;
+    width:121px;
     font-size: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 4px 2px 5px 0;
+    padding: 3px 2px 3px 0;
 
 }
 .aside a:hover{
