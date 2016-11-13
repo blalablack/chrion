@@ -21,9 +21,10 @@
 .aside{
     font-size: 1.4em;
 }
-.footer{
-    font-size: 1.2em;
+.aside p{
+    font-size: .6em;
 }
+.footer
 .header{
     overflow: hidden;
     width:100%;
@@ -122,4 +123,29 @@ padding-bottom: 5px;
 #content .content_bottom p{
     padding-left:5%;
     padding-right:5%;
+}
+.aside h4{
+    margin-bottom: 5px;
+}
+.aside p{
+    font-family:"微软雅黑 Light","微软雅黑";
+    line-height:25px;
+    margin-top:0;
+}
+.aside a{
+    display: block;
+    width:136px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 2px 5px 0;
+}
+.aside a:hover{
+    background-color:#EFF8F7;
+}
+.aside a span {
+    float: left;
+    width: 19px;
+    height: 19px;
+    margin: 1px 5px 0 3px;
+    background: url("../img/tubiao.png") -83px 0 no-repeat;
 }
