@@ -48,8 +48,8 @@
       <file leaf-file-name="ipad.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/ipad.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="138">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -75,8 +75,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="474" />
-    <option name="y" value="53" />
+    <option name="x" value="306" />
+    <option name="y" value="52" />
     <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
@@ -107,15 +107,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479023920805</updated>
-      <workItem from="1479023922579" duration="2219000" />
+      <workItem from="1479023922579" duration="2328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2219000" />
+    <option name="totallyTimeSpent" value="2328000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="474" y="53" width="1378" height="744" extended-state="0" />
+    <frame x="306" y="52" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -170,8 +170,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ipad.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="138">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding />
         </state>
       </provider>
