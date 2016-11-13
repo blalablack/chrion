@@ -1,5 +1,5 @@
 .kuang{
-    width:90%;
+    width:100%;
 }
 .header{
     overflow: hidden;
@@ -27,7 +27,6 @@
 }
 .nav ul li{
     float: left;
-    font-size:12px;
     margin-left:13px;//一会改成百分比
 
 }
@@ -91,12 +90,10 @@
     padding-left:6px;
 
 }
-
 .aside h4{
     margin-bottom: 5px;
 }
 .aside p{
-    font-size: 8px;
     font-family:"微软雅黑 Light","微软雅黑";
     line-height:25px;
     margin-top:0;
@@ -105,7 +102,6 @@
 .aside a{
     display: block;
     width:136px;
-    font-size: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 4px 2px 5px 0;
@@ -120,5 +116,4 @@
     height:19px;
     margin:1px 5px 0 3px;
     background: url("../img/tubiao.png") -83px 0 no-repeat;
-
 }
