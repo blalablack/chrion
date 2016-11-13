@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="css/video.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
     <style>
         body{
             font: 300 15px / 21px 'ff-zwo-web',Arial,sans-serif;
@@ -43,36 +44,50 @@
             font: 300 12px / 17px 'ff-zwo-web',Arial,sans-serif;
             color:#505050;
         }
-
-
-
     </style>
+    <script>
+        //判断手机端还是pc端
+        var ua = navigator.userAgent;
+        if(ua.indexOf("Windows NT")!=-1||ua.indexOf("Mac OS X 10")!=-1){
+            //这是pc端
+            $(function () {
+                links=$("head link");
+                $(links[0]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:992px)' href='css/pc.css'/>");
+                links=$("head link");
+                $(links[1]).after("<link rel='stylesheet' type='text/css' media='screen and (max-width:992px)' href='css/biglittle2.css'/>");
+                navcar();
+//                picturechange.t();
+//                picturemouse();
+//                limouse();
+//                liclick();
+//                imghover();
+            })
+
+        }else{
+            //这是手机,更改link
+            links=$("head link");
+            $(links[0]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:992px) ' href='css/ipad.css'/>")
+            links=$("head link");
+            //middle考虑用还是不用
+            $(links[1]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:480px) and (max-width:992px)' href='css/ipad.css'/>");
+            links=$("head link");
+            $(links[2]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:300px) and (max-width:480px)' href='css/phone.css'/>");
+            links=$("head link");
+            $(links[3]).after("<link rel='stylesheet' type='text/css' media='screen and (max-width:300px)' href='css/phone2.css'/>");
+            $(function () {
+//                pictureChangePhone.t();
+//                phoneNavcar();
+//                PhoneLiClick()
+            })
+        }
+    </script>
     <link rel="stylesheet" type="text/css" media="screen and (min-width:1200px)" href="css/pc.css"/>
     <link rel="stylesheet" type="text/css" media="screen and (max-width:1200px) and (min-width:992px)" href="css/pc.css"/>
     <link rel="stylesheet" type="text/css" media="screen and (max-width:992px) and (min-width:480px)" href="css/ipad.css"/>
     <link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="css/phone.css"/>
     <link rel="stylesheet" href="css/video.css"/>
-    <script src="js/jquery-1.11.3.js"></script>
-    <!--<script>-->
-        <!--//判断手机端还是pc端-->
-        <!--var ua = navigator.userAgent;-->
-        <!--if(ua.indexOf("Windows NT")==-1||ua.indexOf("Linux")==-1||ua.indexOf("Mac OS X 10")==-1){-->
-            <!--//这是pc端-->
-           <!--$(function () {-->
-               <!--navcar();-->
-           <!--})-->
-        <!--}else{-->
-            <!--//这是手机,更改link-->
-            <!--var links=$("link");-->
-            <!--for(var i=1;i<2;i++){-->
-                <!--$(links[i]).remove();-->
-            <!--}-->
-            <!--links=$("head link");-->
-            <!--$(links[0]).after("<link rel='stylesheet' type='text/css' media='screen (min-width:768px) and (max-width:992px) ' href='css/ipod.css'/>")-->
-            <!--links=$("head link");-->
-            <!--$(links[1]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:480px) and (max-width:768px)' href='css/phone.css'/>");-->
-        <!--}-->
-    <!--</script>-->
+
+
 </head>
 <body>
 <div class="kuang">
@@ -198,13 +213,13 @@
 </body>
 </html>
 
-//TODO:
-1小屏幕下的排版
-2pad和手机的排版
-//不去健身就做这两个
-2图片点击看大图
-5考虑用不用ajax（可以点击看大图是换颜色）
+<!--//TODO:-->
+<!--1小屏幕下的排版-->
+<!--2pad和手机的排版-->
+<!--//不去健身就做这两个-->
+<!--2图片点击看大图-->
+<!--5考虑用不用ajax（可以点击看大图是换颜色）-->
 
-3其余有视频的板式
-4没有视频的板式
+<!--3其余有视频的板式-->
+<!--4没有视频的板式-->
 
