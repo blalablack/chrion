@@ -48,32 +48,25 @@
             //这是pc端
             $(function () {
                 links=$("head link");
-                $(links[0]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:992px)' href='css/pc.css'/>");
-                links=$("head link");
-                $(links[1]).after("<link rel='stylesheet' type='text/css' media='screen and (max-width:992px)' href='css/biglittle2.css'/>");
+                $(links[1]).after("<link rel='stylesheet' type='text/css' href='css/pc.css'/>");
                 navcar();
             })
-
+            console.log(1);
         }else{
+            links=$("head link");
+            $(links[1]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:992px)' href='css/ipad1.css'/>");
             //这是手机,更改link
             links=$("head link");
-            $(links[0]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:992px) ' href='css/ipad.css'/>")
-            links=$("head link");
             //middle考虑用还是不用
-            $(links[1]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:480px) and (max-width:992px)' href='css/ipad.css'/>");
+            $(links[2]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:480px) and (max-width:992px)' href='css/ipad.css'/>");
             links=$("head link");
-            $(links[2]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:300px) and (max-width:480px)' href='css/phone.css'/>");
+            $(links[3]).after("<link rel='stylesheet' type='text/css' media='screen and (min-width:300px) and (max-width:480px)' href='css/phone.css'/>");
             links=$("head link");
-            $(links[3]).after("<link rel='stylesheet' type='text/css' media='screen and (max-width:300px)' href='css/phone2.css'/>");
-            $(function () {
-            })
+            $(links[4]).after("<link rel='stylesheet' type='text/css' media='screen and (max-width:300px)' href='css/phone1.css'/>");
+
         }
     </script>
-    <link rel="stylesheet" type="text/css" media="screen and (min-width:1200px)" href="css/pc.css"/>
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:1200px) and (min-width:992px)" href="css/pc.css"/>
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:992px) and (min-width:480px)" href="css/ipad.css"/>
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:480px)" href="css/phone.css"/>
-    <link rel="stylesheet" href="css/video.css"/>
+
 
 
 </head>
