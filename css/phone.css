@@ -22,7 +22,7 @@
     font-size: 1.4em;
 }
 .aside p{
-    font-size: .6em;
+    font-size: .8em;
 }
 .footer
 .header{
@@ -36,7 +36,7 @@
     height: 90px;
     width:90px;
     background: url("../img/food-sense.png") no-repeat 0 0;
-    margin:50px auto;
+    margin:40px auto 0px;
     padding-top:20px;
 }
 

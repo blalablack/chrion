@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e840a6a6-aead-4b36-9906-32ec6d204fc6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ipad.css" afterPath="$PROJECT_DIR$/css/ipad.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/phone.css" afterPath="$PROJECT_DIR$/css/phone.css" />
     </list>
     <ignored path="chrion.iws" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="phone.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/phone.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="322">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -119,12 +118,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479023920805</updated>
-      <workItem from="1479023922579" duration="3605000" />
+      <workItem from="1479023922579" duration="3953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3605000" />
+    <option name="totallyTimeSpent" value="3953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="371" y="81" width="1378" height="735" extended-state="0" />
@@ -190,8 +189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/phone.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="322">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding />
         </state>
       </provider>
